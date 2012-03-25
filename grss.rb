@@ -24,9 +24,6 @@ rss.items.each do |i|
 end
 
 #Insert
-#puts "■はてなブックマーク 最近の注目エントリ #{ENTRIES} 件"
-#puts
-#puts bookmarks[0, ENTRIES].map {|i| i.join("\n") }.join("\n\n")
 ins = my.prepare('insert into Thread (Thread_name,Genre_id) values (?,?)')
 bookmarks[0,ENTRIES].map { |i|
   ins.execute i[0],genre_id
