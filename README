@@ -2,6 +2,10 @@
 mysql:5.5
 Ruby:1.9.3
 
-mysql Encoding:utf8
+#Mysql
+mysqlEncoding:utf8
 Table:Thread
+
+#Ruby
+Ruby-mysql:https://github.com/tmtm/ruby-mysql
 
